@@ -1,0 +1,204 @@
+/*font-family: 'Quicksand', sans-serif;*/
+
+/* #0098ff
+#00c0ff
+#63ebff
+#b9ffff
+#ffffff */
+
+body {
+    position: relative;
+    background-color: #b9ffff;
+}
+
+header {
+    background-color: #0098ff;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    left: 0%;
+    top: 0%;
+    flex-flow: row wrap;
+    justify-content: space-between;}
+
+header .logo a img {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 5%;
+    top: 25%;}
+
+header nav .navegador {
+    display: flex;
+    gap: 5%;
+    list-style: none;
+    position: absolute;
+    width: 40%;
+    height: 80px;
+    left: 60%;
+    top: 0%;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;}
+
+header nav .navegador li a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 139%;
+    line-height: 100%;
+    text-align: center;
+    color: #b9ffff;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;}
+
+main {
+    position: absolute;
+    width: 100%;
+    height: 980px;
+    left: 0px;
+    top: 84.22px;}
+
+main .secUno {
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: none;
+    background-image: url(../assets/img/piedras-azules.jpeg);
+    position: absolute;
+    width: 97%;
+    height: 280px;
+    left: 1.4%;
+    top: 0.5%;
+    display: flex;
+    background-position: 50% 50%;
+    background-size: cover;}
+
+main .secUno .secImguno img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 21%;
+    top: 22%;
+    opacity: none;
+    display: flex;
+}
+
+main .secUno .secTit h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 300%;
+    line-height: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    left: 37.5%;
+    top: 20%;
+}
+
+main .secDos {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    left: 0px;
+    top: 300px;
+    display: flex;}
+
+main .secDos .clasUno {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+
+main .secDos .clasUno h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200%;
+    line-height: 100%;
+    text-align: center;
+    color: #00c0ff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main .secDos .clasDos {
+    background-image: url(../assets/img/Amatista.jpg);
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: none;
+    position: absolute;
+    width: 27.2%;
+    height: 300px;
+    left: 0%;
+    top: 25%;
+    background-blend-mode: luminosity, normal;
+    opacity: 0.75;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+main .secDos .clasTres {
+    background-image: url(../assets/img/Amatista.jpg);
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: none;
+    position: absolute;
+    width: 27.2%;
+    height: 300px;
+    left: 36.5%;
+    top: 25%;
+    background-blend-mode: luminosity, normal;
+    opacity: 0.75;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+main .secDos .clasCuatro {
+    background-image: url(../assets/img/Amatista.jpg);
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: none;
+    position: absolute;
+    width: 27.2%;
+    height: 300px;
+    left: 72.8%;
+    top: 25%;
+    background-blend-mode: luminosity, normal;
+    opacity: 0.75;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+main .secTres {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    left: 0px;
+    top: 750px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0%;
+    top: 1000px;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;}
+
+footer div .redesSociales {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    left: 45.2%;
+    position: absolute;}
+
+footer div .redesSociales li a img {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    position: absolute;}
