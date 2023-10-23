@@ -7,7 +7,6 @@
 #ffffff */
 
 body {
-    position: relative;
     background-color: #b9ffff;
 }
 
@@ -20,14 +19,16 @@ header {
     left: 0%;
     top: 0%;
     flex-flow: row wrap;
-    justify-content: space-between;}
+    justify-content: space-between;
+}
 
 header .logo a img {
     position: absolute;
     width: 35px;
     height: 35px;
     left: 5%;
-    top: 25%;}
+    top: 25%;
+}
 
 header nav .navegador {
     display: flex;
@@ -36,11 +37,12 @@ header nav .navegador {
     position: absolute;
     width: 40%;
     height: 80px;
-    left: 60%;
+    left: 50%;
     top: 0%;
     align-items: center;
     padding: 0%;
-    margin: 0%;}
+    margin: 0%;
+}
 
 header nav .navegador li a {
     font-style: normal;
@@ -50,14 +52,16 @@ header nav .navegador li a {
     text-align: center;
     color: #b9ffff;
     font-family: 'Quicksand', sans-serif;
-    text-decoration: none;}
+    text-decoration: none;
+}
 
 main {
     position: absolute;
     width: 100%;
     height: 980px;
     left: 0px;
-    top: 84.22px;}
+    top: 84.22px;
+}
 
 main .secUno {
     box-sizing: border-box;
@@ -71,7 +75,8 @@ main .secUno {
     top: 0.5%;
     display: flex;
     background-position: 50% 50%;
-    background-size: cover;}
+    background-size: cover;
+}
 
 main .secUno .secImguno img {
     position: absolute;
@@ -98,84 +103,275 @@ main .secUno .secTit h1 {
     top: 20%;
 }
 
-main .secDos {
+main #secDos {
     position: absolute;
     width: 100%;
-    height: 400px;
-    left: 0px;
-    top: 300px;
-    display: flex;}
+    height: 200px;
+    top: 350px;
+}
 
-main .secDos .clasUno {
+main #secDos .clasUno {
     position: absolute;
     width: 100%;
     height: 100px;
 }
 
-main .secDos .clasUno h2 {
+main #secDos .clasUno h2 {
     font-style: normal;
     font-weight: 700;
-    font-size: 200%;
+    font-size: 300%;
     line-height: 100%;
     text-align: center;
     color: #00c0ff;
     font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.2em;
+    -webkit-animation: tracking-in-contract 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite both;
+    animation: tracking-in-contract 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite both;
 }
+@-webkit-keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0; }
+    40% {
+        opacity: 0.6; }
+    100% {
+        letter-spacing: 0.2em;
+        opacity: 1; } }
 
-main .secDos .clasDos {
-    background-image: url(../assets/img/Amatista.jpg);
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: none;
-    position: absolute;
-    width: 27.2%;
-    height: 300px;
-    left: 0%;
-    top: 25%;
-    background-blend-mode: luminosity, normal;
-    opacity: 0.75;
-    background-position: 50% 50%;
-    background-size: cover;
-}
-
-main .secDos .clasTres {
-    background-image: url(../assets/img/Amatista.jpg);
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: none;
-    position: absolute;
-    width: 27.2%;
-    height: 300px;
-    left: 36.5%;
-    top: 25%;
-    background-blend-mode: luminosity, normal;
-    opacity: 0.75;
-    background-position: 50% 50%;
-    background-size: cover;
-}
-
-main .secDos .clasCuatro {
-    background-image: url(../assets/img/Amatista.jpg);
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: none;
-    position: absolute;
-    width: 27.2%;
-    height: 300px;
-    left: 72.8%;
-    top: 25%;
-    background-blend-mode: luminosity, normal;
-    opacity: 0.75;
-    background-position: 50% 50%;
-    background-size: cover;
-}
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0; }
+    40% {
+        opacity: 0.6; }
+    100% {
+        letter-spacing: 0.2em;
+        opacity: 1; } }
 
 main .secTres {
     position: absolute;
     width: 100%;
+    height: 400px;
+    left: 0px;
+    top: 450px;
+}
+
+main .secTres #carouselExample .carousel-inner .carousel-item .container-card {
+    display: flex;
+}
+
+main .secTres #carouselExample .carousel-inner .carousel-item .card {
+    margin: 0.5em;
+    height: 330px;
+    width: 350px;
+    background-color: white;
+    text-align: center;
+}
+
+main .secTres #carouselExample .carousel-inner .carousel-item .card .image-wrapper {
+    width: 100%;  
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .secTres #carouselExample .carousel-inner .carousel-item .card .image-wrapper img {
+    max-width: 50%;
+    max-height: 100%;
+}
+
+main #secCuatro {
+    position: absolute;
+    width: 100%;
     height: 150px;
     left: 0px;
-    top: 750px;
+    top: 850px;
+}
+
+main #secCuatro .clasUno {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+
+main #secCuatro .clasUno h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 300%;
+    line-height: 100%;
+    text-align: center;
+    color: #00c0ff;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.2em;
+    -webkit-animation: tracking-in-contract 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite both;
+    animation: tracking-in-contract 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite both;
+}
+@-webkit-keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0; }
+    40% {
+        opacity: 0.6; }
+    100% {
+        letter-spacing: 0.2em;
+        opacity: 1; } }
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0; }
+    40% {
+        opacity: 0.6; }
+    100% {
+        letter-spacing: 0.2em;
+        opacity: 1; } }
+
+main #secCuatro .clasDos {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 200px;
+}
+
+main #secCinco {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    left: 0px;
+    top: 1200px;
+}
+
+main #secCinco .clasUno {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+
+main #secCinco .clasUno h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 300%;
+    line-height: 100%;
+    text-align: center;
+    color: #00c0ff;
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.2em;
+    -webkit-animation: tracking-in-contract 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite both;
+    animation: tracking-in-contract 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite both;
+}
+@-webkit-keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0; }
+    40% {
+        opacity: 0.6; }
+    100% {
+        letter-spacing: 0.2em;
+        opacity: 1; } }
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0; }
+    40% {
+        opacity: 0.6; }
+    100% {
+        letter-spacing: 0.2em;
+        opacity: 1; } }
+
+main #secCinco .clasDos {
+    position: absolute;
+    left: 13.5%;
+    width: 70%;
+    height: 650px;
+    padding: 0;
+    margin: 0;
+}
+
+main #secCinco .clasDos form .formNos {
+    position: absolute;
+    width: 100%;
+    height: 66.5%;
+    left: 1%;
+    top: 18%;
+    background: #0098ff;
+    opacity: 0.8;
+    border-radius: 30px;
+}
+
+main #secCinco .clasDos form .formNos .nosUnos {
+    position: absolute;
+    width: 43%;
+    height: 15%;
+    left: 5%;
+    top: 11%;
+    background: white;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+main #secCinco .clasDos form .formNos .nosDos {
+    position: absolute;
+    width: 43%;
+    height: 15%;
+    right: 5%;
+    top: 11%;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main #secCinco .clasDos form .formNos .nosTres {
+    position: absolute;
+    width: 43%;
+    height: 15%;
+    left: 5%;
+    top: 35.5%;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+        
+main #secCinco .clasDos form .formNos .nosCuatro {
+    position: absolute;
+    width: 43%;
+    height: 15%;
+    right: 5%;
+    top: 35.5%;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main #secCinco .clasDos form .formNos .nosCinco {
+    position: absolute;
+    width: 90%;
+    height: 31%;
+    left: 5%;
+    top: 60%;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main #secCinco .clasDos form .envNos {
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 30px;
+    position: absolute;
+    width: 9%;
+    height: 5%;
+    left: 47.5%;
+    top: 88.5%;
+    background: #0098ff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100%;
+    line-height: 10%;
+    text-align: center;
+    color: black;
+    font-family: "Roboto", sans-serif;
 }
 
 footer {
@@ -183,22 +379,157 @@ footer {
     width: 100%;
     height: 60px;
     left: 0%;
-    top: 1000px;
+    top: 1920px;
     display: flex;
     background-color: #ffffff;
-    justify-content: space-between;}
+    justify-content: center
+}
+
+footer div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
 footer div .redesSociales {
     display: flex;
-    gap: 50px;
     list-style: none;
-    flex-direction: row;
-    justify-content: center;
-    left: 45.2%;
-    position: absolute;}
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
 
 footer div .redesSociales li a img {
-    display: flex;
     width: 20px;
     height: 20px;
-    position: absolute;}
+}
+
+@media (max-width: 1024px) {
+    header nav .navegador {
+        left: 40%;
+    }
+    main .secUno .secImguno img {
+        top: 15%;
+    }
+    main .secUno .secTit h1 {
+        left: 42%;
+        top: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #63ebff;
+    }
+    header {
+        background-color: #00c0ff;
+    }
+    header nav .navegador li a {
+        font-size: 110%;
+        color: black;
+    }
+    main .secUno .secTit h1 {
+        left: 52%;
+    }
+    main #secDos .clasUno h2 {
+        color: black;
+    }
+    main .secTres #carouselExample .carousel-inner .carousel-item .container-card {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    main #secCuatro {
+        top: 1200px;
+    }
+    main #secCuatro .clasUno h2 {
+        color: black;
+    }
+    main #secCinco {
+        top: 1580px;
+    }
+    main #secCinco .clasUno h2 {
+        color: black;
+    }
+    main #secCinco .clasDos form .envNos {
+        width: 15%;
+        left: 44.5%;
+        font-size: 90%;
+    }
+    footer {
+        top: 2300px;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        background-color: #0098ff;
+    }
+    header {
+        background-color: #b9ffff;
+    }
+    header nav .navegador {
+        left: 20%;
+    }
+    header nav .navegador li a {
+        font-size: 90%;
+        color: #0098ff;
+    }
+    main .secUno .secImguno img {
+        top: 30%;
+        left: 15%;
+        width: 100px;
+        height: 100px;
+    }
+    main .secUno .secTit h1 {
+        left: 47%;
+        top: 35%;
+        font-size: 200%;
+        font-weight: 700;
+    }
+    main #secDos {
+        top: 310px;
+    }
+    main #secDos .clasUno h2 {
+        font-size: 150%;
+    }
+    main .secTres {
+        top: 350px;
+    }
+    main .secTres #carouselExample .carousel-inner .carousel-item .container-card {
+        display: contents;
+    }
+    main .secTres #carouselExample .carousel-inner .carousel-item .card {
+        height: 100%;
+        width: 96%;
+    }
+    main #secCuatro {
+        top: 1950px;
+    }
+    main #secCuatro .clasUno h2 {
+        font-size: 150%;
+    }
+    main #secCuatro .clasDos {
+        top: 50px;
+    }
+    main #secCinco {
+        top: 2420px;
+        height: 430px;
+    }
+    main #secCinco .clasUno h2 {
+        font-size: 150%;
+    }
+    main #secCinco .clasDos {
+        width: 98%;
+        left: 1%;
+        top: -10%;
+        height: 450px;
+    }
+    main #secCinco .clasDos form .envNos {
+        top: 370px;
+        background: #b9ffff;
+    }
+    footer {
+        top: 2880px;
+    }
+}
