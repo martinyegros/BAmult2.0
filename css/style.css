@@ -55,6 +55,34 @@ header nav .navegador li a {
     text-decoration: none;
 }
 
+.container-icon {
+    position: relative;
+}
+.count-products{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.icon-cart {
+    position: absolute;
+    top: 8px;
+    right: 25px;
+    width: 40px;
+    height: 60px;
+    stroke: white;
+}
+.icon-cart :hover {
+    cursor: pointer;
+}
+
 main {
     position: absolute;
     width: 100%;
@@ -184,9 +212,9 @@ main .secTres #carouselExample .carousel-inner .carousel-item .card .image-wrapp
 main #secCuatro {
     position: absolute;
     width: 100%;
-    height: 150px;
+    height: 650px;
     left: 0px;
-    top: 930px;
+    top: 900px;
 }
 
 main #secCuatro .clasUno {
@@ -229,68 +257,6 @@ main #secCuatro .clasUno h2 {
 
 main #secCuatro .clasDos {
     position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    height: 200px;
-}
-
-main #secCuatro .clasDos p {
-    position: absolute;
-    margin: 0;
-    text-align: center;
-    width: 80%;
-    left: 10%;
-}
-
-main #secCinco {
-    position: absolute;
-    width: 100%;
-    height: 650px;
-    left: 0px;
-    top: 1200px;
-}
-
-main #secCinco .clasUno {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-}
-
-main #secCinco .clasUno h2 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 300%;
-    line-height: 100%;
-    text-align: center;
-    color: black;
-    font-family: 'Quicksand', sans-serif;
-    letter-spacing: 0.2em;
-    -webkit-animation: tracking-in-contract 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite both;
-    animation: tracking-in-contract 4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite both;
-}
-@-webkit-keyframes tracking-in-contract {
-    0% {
-        letter-spacing: 1em;
-        opacity: 0; }
-    40% {
-        opacity: 0.6; }
-    100% {
-        letter-spacing: 0.2em;
-        opacity: 1; } }
-
-@keyframes tracking-in-contract {
-    0% {
-        letter-spacing: 1em;
-        opacity: 0; }
-    40% {
-        opacity: 0.6; }
-    100% {
-        letter-spacing: 0.2em;
-        opacity: 1; } }
-
-main #secCinco .clasDos {
-    position: absolute;
     left: 13.5%;
     width: 70%;
     height: 650px;
@@ -298,7 +264,7 @@ main #secCinco .clasDos {
     margin: 0;
 }
 
-main #secCinco .clasDos form .formNos {
+main #secCuatro .clasDos form .formNos {
     position: absolute;
     width: 100%;
     height: 66.5%;
@@ -309,7 +275,7 @@ main #secCinco .clasDos form .formNos {
     border-radius: 30px;
 }
 
-main #secCinco .clasDos form .formNos .nosUnos {
+main #secCuatro .clasDos form .formNos .nosUnos {
     position: absolute;
     width: 43%;
     height: 15%;
@@ -320,7 +286,7 @@ main #secCinco .clasDos form .formNos .nosUnos {
     text-align: center; 
 }
 
-main #secCinco .clasDos form .formNos .nosDos {
+main #secCuatro .clasDos form .formNos .nosDos {
     position: absolute;
     width: 43%;
     height: 15%;
@@ -331,7 +297,7 @@ main #secCinco .clasDos form .formNos .nosDos {
     text-align: center;
 }
 
-main #secCinco .clasDos form .formNos .nosTres {
+main #secCuatro .clasDos form .formNos .nosTres {
     position: absolute;
     width: 43%;
     height: 15%;
@@ -342,7 +308,7 @@ main #secCinco .clasDos form .formNos .nosTres {
     text-align: center;
 }
         
-main #secCinco .clasDos form .formNos .nosCuatro {
+main #secCuatro .clasDos form .formNos .nosCuatro {
     position: absolute;
     width: 43%;
     height: 15%;
@@ -353,7 +319,7 @@ main #secCinco .clasDos form .formNos .nosCuatro {
     text-align: center;
 }
 
-main #secCinco .clasDos form .formNos .nosCinco {
+main #secCuatro .clasDos form .formNos .nosCinco {
     position: absolute;
     width: 90%;
     height: 31%;
@@ -364,7 +330,7 @@ main #secCinco .clasDos form .formNos .nosCinco {
     text-align: center;
 }
 
-main #secCinco .clasDos form .envNos {
+main #secCuatro .clasDos form .envNos {
     box-sizing: border-box;
     border: 2px solid black;
     border-radius: 30px;
@@ -388,7 +354,7 @@ footer {
     width: 100%;
     height: 60px;
     left: 0%;
-    top: 1920px;
+    top: 1650px;
     display: flex;
     background-color: #ffffff;
     justify-content: center
@@ -427,7 +393,7 @@ footer div .redesSociales li a img {
         font-size: 300%;
         width: 30%;
     }
-    main #secCinco {
+    main #secCuatro {
     top: 1250px;
     }
     footer {
@@ -453,10 +419,7 @@ footer div .redesSociales li a img {
     main #secCuatro {
         top: 1300px;
     }
-    main #secCinco {
-        top: 1680px;
-    }
-    main #secCinco .clasDos form .envNos {
+    main #secCuatro .clasDos form .envNos {
         width: 15%;
         left: 44.5%;
         font-size: 90%;
@@ -503,27 +466,18 @@ footer div .redesSociales li a img {
     }
     main #secCuatro {
         top: 1950px;
+        height: 430px;
     }
     main #secCuatro .clasUno h2 {
         font-size: 150%;
     }
     main #secCuatro .clasDos {
-        top: 50px;
-    }
-    main #secCinco {
-        top: 2500px;
-        height: 430px;
-    }
-    main #secCinco .clasUno h2 {
-        font-size: 150%;
-    }
-    main #secCinco .clasDos {
         width: 98%;
         left: 0%;
         top: -10%;
         height: 450px;
     }
-    main #secCinco .clasDos form .envNos {
+    main #secCuatro .clasDos form .envNos {
         top: 385px;
     }
     footer {
