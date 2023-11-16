@@ -4,8 +4,8 @@
   <summary>DESCRIPCIÓN</summary>
   <br>
     Ésta es una página e-commerce
-    Sobre productos de piedras energéticas
-    Para el curso de BA Multiplica 2.0
+    sobre productos de piedras energéticas, 
+    para el curso de BA Multiplica 2.0
     Gracias!
 </details>
 
